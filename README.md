@@ -46,6 +46,12 @@ Take note of your just registered app’s API key. This is the only piece of inf
 2. **ui**: View classes along with their corresponding ViewModel.
 3. **utils**: Utility classes.
 
+**Unit Test:** Unit-test for ApiHelper , Repository and ViewModel which uses Kotlin Coroutines.
+ 1. [ViewModelTest Code](app/src/test/java/com/populararticles/viewModel/ArticlesViewModelTest.kt)
+ 2. [RepositoryTest Code](app/src/test/java/com/populararticles/data/repository/ArticlesRepositoryTest.kt)
+ 3. [ApiHelperTest Code](app/src/test/java/com/populararticles/data/api/ApiHelperTest.kt)
+
+
 ### Reference resources:
 1. Coroutines: [Check here](https://blog.mindorks.com/mastering-kotlin-coroutines-in-android-step-by-step-guide)
 2. Retrofit: [Check here](https://square.github.io/retrofit/)
