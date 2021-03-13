@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/small_margin_padding"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/list_image_size"
+            android:layout_height="@dimen/list_image_size"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/image_stroke_width" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/small_margin_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/list_arrow"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/list_image"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                tools:text="efrrvrvrvrvrvrrvrvrvjgvgvghvghvgvhgghvvhgvgvhgvhgvhgvhgvvg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/list_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/medium_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/list_title"
+                app:layout_constraintTop_toBottomOf="@+id/list_title"
+                tools:text="efrrvhb" />
+
+            <TextView
+                android:id="@+id/list_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/small_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:drawablePadding="@dimen/small_margin_padding"
+                app:layout_constraintStart_toEndOf="@+id/list_author"
+                app:layout_constraintTop_toBottomOf="@+id/list_author"
+                tools:text="efrrvrvrvrvrvrrvrvrv"
+                app:drawableStartCompat="@mipmap/ic_list_date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/list_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/list_arrow_to_click"
+            android:src="@mipmap/ic_list_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

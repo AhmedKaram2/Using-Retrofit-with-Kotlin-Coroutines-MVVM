@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/details_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/details_image"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintWidth_default="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent=".30"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin_padding"
+            android:padding="@dimen/small_margin_padding">
+
+            <TextView
+                android:id="@+id/details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="efrrvrvrvrvrvrrvrvrvjgvgvghvghvgvhgghvvhgvgvhgvhgvhgvhgvvg" />
+
+            <TextView
+                android:id="@+id/details_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin_padding"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/medium_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/details_title"
+                app:layout_constraintTop_toBottomOf="@+id/details_title"
+                tools:text="efrrvhb" />
+
+            <TextView
+                android:id="@+id/details_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/small_margin_padding"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/small_text"
+                app:drawableStartCompat="@mipmap/ic_list_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_author"
+                tools:text="efrrvrvrvrvrvrrvrvrv" />
+
+            <TextView
+                android:id="@+id/details_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_margin_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="@dimen/small_margin_padding"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_date"
+                tools:text="efrrvrvrvrvrvrrvrvrv" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
