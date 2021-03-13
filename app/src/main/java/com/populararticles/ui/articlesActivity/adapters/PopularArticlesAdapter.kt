@@ -14,20 +14,21 @@ import kotlinx.android.synthetic.main.item_popular_article.view.*
 class PopularArticlesAdapter(private val articles: ArrayList<ArticlesResult>) :
     RecyclerView.Adapter<PopularArticlesAdapter.DataViewHolder>() {
 
+
     var onItemClick: ((ArticlesResult) -> Unit)? = null
 
    inner class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
+        // bind data to it's view
         fun bind(article: ArticlesResult) {
             itemView.apply {
                 list_title.text = article.title
                 list_author.text = article.byline
                 list_date.text = article.publishedDate
-
+            // when recycler item clicked invoke the listener in main activity
                 itemView.setOnClickListener{
                     onItemClick?.invoke(article)
                 }
-
+                // check the media list if not empty get first item with thumbnail size and set it using Picasso
                 article.media?.let { media ->
                     if (media.isNotEmpty()) {
                         media[0].mediaMetadata?.let { metaData ->
@@ -52,11 +53,11 @@ class PopularArticlesAdapter(private val articles: ArrayList<ArticlesResult>) :
         holder.bind(articles[position])
     }
 
+    // function to add items to list
     fun addArticles(articles: List<ArticlesResult>) {
         this.articles.apply {
             clear()
             addAll(articles)
         }
-
     }
 }

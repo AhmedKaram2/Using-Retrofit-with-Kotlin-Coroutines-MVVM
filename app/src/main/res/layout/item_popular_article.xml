@@ -18,7 +18,7 @@
             android:id="@+id/list_image"
             android:layout_width="@dimen/list_image_size"
             android:layout_height="@dimen/list_image_size"
-            android:src="@mipmap/ic_launcher"
+            android:src="@drawable/ic_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +44,6 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="2"
-                tools:text="efrrvrvrvrvrvrrvrvrvjgvgvghvghvgvhgghvvhgvgvhgvhgvhgvhgvvg"
                 android:textColor="@color/black"
                 android:textSize="@dimen/large_text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +64,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/list_title"
                 app:layout_constraintTop_toBottomOf="@+id/list_title"
-                tools:text="efrrvhb" />
+                />
 
             <TextView
                 android:id="@+id/list_date"
@@ -79,7 +78,7 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/list_author"
-                tools:text="efrrvrvrvrvrvrrvrvrv" />
+                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -15,9 +15,9 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="spread"
-        app:layout_constraintWidth_default="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="spread" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -54,8 +54,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="efrrvrvrvrvrvrrvrvrvjgvgvghvghvgvhgghvvhgvgvhgvhgvhgvhgvvg" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/details_author"
@@ -69,8 +68,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/details_title"
-                app:layout_constraintTop_toBottomOf="@+id/details_title"
-                tools:text="efrrvhb" />
+                app:layout_constraintTop_toBottomOf="@+id/details_title" />
 
             <TextView
                 android:id="@+id/details_date"
@@ -83,22 +81,20 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/details_author"
-                tools:text="efrrvrvrvrvrvrrvrvrv" />
+                app:layout_constraintTop_toBottomOf="@+id/details_author" />
 
             <TextView
                 android:id="@+id/details_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/large_margin_padding"
-                android:textColor="@color/black"
-                android:textSize="@dimen/medium_text"
                 android:lineSpacingMultiplier="1.3"
                 android:padding="@dimen/small_margin_padding"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/details_date"
-                tools:text="efrrvrvrvrvrvrrvrvrv" />
+                app:layout_constraintTop_toBottomOf="@+id/details_date" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

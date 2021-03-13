@@ -20,17 +20,16 @@ class ArticlesListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val view: View = inflater.inflate(R.layout.fragment_article_details, container, false)
-
-        return view
+    ): View {
+        return inflater.inflate(R.layout.fragment_article_details, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        // connect with viewModel
         articlesViewModel = ViewModelProviders.of(activity!!).get(ArticlesViewModel::class.java)
         articlesViewModel?.let {
+            // get data from view model when the fragment created
             setDataInViews(it.articlesResult)
         }
     }

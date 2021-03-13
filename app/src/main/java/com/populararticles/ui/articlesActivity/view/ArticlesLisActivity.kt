@@ -35,13 +35,14 @@ class ArticlesLisActivity : AppCompatActivity() {
     }
 
     private fun setupViewModel() {
-        viewModel = ViewModelProviders.of(
-            this,
+        viewModel = ViewModelProviders.of(this,
             ViewModelFactory(ApiHelper(RetrofitBuilder.articlesCalls))
         ).get(ArticlesViewModel::class.java)
     }
 
+    // setup Recyclerview to be ready handle the articles items
     private fun setupUI() {
+
         recyclerView.layoutManager = LinearLayoutManager(this)
         adapter = PopularArticlesAdapter(arrayListOf())
         recyclerView.addItemDecoration(
@@ -53,6 +54,8 @@ class ArticlesLisActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
 
+    // when item clicked it the recycler --> set the data get from item to it's object in viewModel
+    //start the fragment after the to use this item showing the details
     private fun handleRecyclerItemClicked(){
 
         adapter.onItemClick = { article ->
@@ -63,14 +66,20 @@ class ArticlesLisActivity : AppCompatActivity() {
         }
     }
 
+    // set the fragment transaction and put the fragment in it's view then commit it
     private fun showDetailsFragment(){
-        val myfragment = ArticlesListFragment()
+
+        val myFragment = ArticlesListFragment()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.details_fragment, myfragment)
+        fragmentTransaction.replace(R.id.details_fragment, myFragment)
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
     }
 
+    // Observe The status of getting the data
+    // if Status success hid progress and fill the recyclerview with the articles list
+    // if error hide progress  and show the error message
+    //if loading hid recycler and show the progress until the status change
     private fun setupObservers() {
         viewModel.getPopularsArticles().observe(this, Observer {
             it?.let { resource ->

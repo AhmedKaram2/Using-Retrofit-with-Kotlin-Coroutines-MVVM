@@ -10,6 +10,7 @@ import kotlinx.coroutines.Dispatchers
 
 class ArticlesViewModel(private val articlesRepository: ArticlesRepository) : ViewModel() {
 
+    // prepare article object to handle result from the item clicked in the recycler
     var articlesResult = ArticlesResult()
 
     fun getPopularsArticles() = liveData(Dispatchers.IO) {
