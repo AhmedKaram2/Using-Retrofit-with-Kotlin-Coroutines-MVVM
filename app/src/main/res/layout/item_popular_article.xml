@@ -71,15 +71,15 @@
                 android:id="@+id/list_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/small_margin_padding"
                 android:textColor="@color/gray"
                 android:textSize="@dimen/small_text"
+                app:drawableStartCompat="@mipmap/ic_list_date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                android:drawablePadding="@dimen/small_margin_padding"
-                app:layout_constraintStart_toEndOf="@+id/list_author"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/list_author"
-                tools:text="efrrvrvrvrvrvrrvrvrv"
-                app:drawableStartCompat="@mipmap/ic_list_date" />
+                tools:text="efrrvrvrvrvrvrrvrvrv" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
