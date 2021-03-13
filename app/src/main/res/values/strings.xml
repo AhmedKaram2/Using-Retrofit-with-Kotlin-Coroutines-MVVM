@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Popular Articles</string>
+    <string name="list_arrow_to_click">list arrow to click</string>
+    <string name="details_image">details_image</string>
+</resources>
