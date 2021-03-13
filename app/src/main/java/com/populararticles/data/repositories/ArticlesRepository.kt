@@ -1,6 +1,7 @@
 package com.populararticles.data.repositories
 
-import com.mindorks.retrofit.coroutines.data.api.ApiHelper
+import com.populararticles.data.api.ApiHelper
+
 
 class ArticlesRepository (private val apiHelper: ApiHelper) {
 

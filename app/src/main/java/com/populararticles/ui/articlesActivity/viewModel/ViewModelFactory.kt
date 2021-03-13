@@ -2,7 +2,7 @@ package com.populararticles.ui.articlesActivity.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.mindorks.retrofit.coroutines.data.api.ApiHelper
+import com.populararticles.data.api.ApiHelper
 import com.populararticles.data.repositories.ArticlesRepository
 
 class ViewModelFactory(private val apiHelper: ApiHelper) : ViewModelProvider.Factory {

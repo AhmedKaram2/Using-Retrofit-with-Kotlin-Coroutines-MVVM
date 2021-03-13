@@ -1,24 +1,22 @@
 package com.populararticles.ui.articlesActivity.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.gson.Gson
-import com.mindorks.retrofit.coroutines.data.api.ApiHelper
-import com.mindorks.retrofit.coroutines.data.api.RetrofitBuilder
-import com.mindorks.retrofit.coroutines.utils.Status
 import com.populararticles.R
+import com.populararticles.data.api.ApiHelper
+import com.populararticles.data.api.RetrofitBuilder
 import com.populararticles.data.models.response.ArticlesResult
 import com.populararticles.ui.articlesActivity.adapters.PopularArticlesAdapter
-import com.populararticles.ui.articlesActivity.fragments.ArticlesListFragment
+import com.populararticles.ui.articlesActivity.view.fragments.ArticlesListFragment
 import com.populararticles.ui.articlesActivity.viewModel.ArticlesViewModel
 import com.populararticles.ui.articlesActivity.viewModel.ViewModelFactory
+import com.populararticles.utils.Status
 import kotlinx.android.synthetic.main.activity_popular_articles.*
 
 class ArticlesLisActivity : AppCompatActivity() {

@@ -1,9 +1,7 @@
 package com.populararticles.data.api
 
 import com.populararticles.data.models.response.PopularArticlesResponse
-import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 interface ArticlesCalls {
 

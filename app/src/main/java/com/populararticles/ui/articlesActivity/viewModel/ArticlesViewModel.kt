@@ -2,9 +2,9 @@ package com.populararticles.ui.articlesActivity.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.mindorks.retrofit.coroutines.utils.Resource
 import com.populararticles.data.models.response.ArticlesResult
 import com.populararticles.data.repositories.ArticlesRepository
+import com.populararticles.utils.Resource
 import kotlinx.coroutines.Dispatchers
 
 

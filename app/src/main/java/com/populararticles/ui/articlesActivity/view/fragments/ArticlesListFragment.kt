@@ -1,6 +1,5 @@
-package com.populararticles.ui.articlesActivity.fragments
+package com.populararticles.ui.articlesActivity.view.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,7 +11,6 @@ import com.populararticles.data.models.response.ArticlesResult
 import com.populararticles.ui.articlesActivity.viewModel.ArticlesViewModel
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_article_details.*
-import kotlinx.android.synthetic.main.item_popular_article.view.*
 
 class ArticlesListFragment : Fragment() {
 

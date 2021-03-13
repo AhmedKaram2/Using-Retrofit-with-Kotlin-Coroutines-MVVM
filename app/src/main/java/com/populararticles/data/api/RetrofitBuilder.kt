@@ -1,6 +1,5 @@
-package com.mindorks.retrofit.coroutines.data.api
+package com.populararticles.data.api
 
-import com.populararticles.data.api.ArticlesCalls
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
