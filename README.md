@@ -1,4 +1,4 @@
-# Using Retrofit with Kotlin Coroutines in Android to Collect Data From The New York Times APIs
+# Using Retrofit with Kotlin Coroutines MVVM in Android to Collect Data From The New York Times APIs
 
 This repository contains a sample app that implements MVVM architecture using Kotlin, ViewModel, Retrofit, Coroutines and etc to get popular articles provided by NY APIs
 and set it in recyclerview with custom adapter.
